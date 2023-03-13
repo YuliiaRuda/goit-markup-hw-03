@@ -27,6 +27,16 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .link {
   text-decoration: none;
 }
@@ -40,6 +50,7 @@ p {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -54,9 +65,7 @@ p {
 
 .header-container {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .header-nav {
@@ -71,6 +80,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
+  display: block;
+  padding: 24px 0;
 }
 
 .header-logo-text {
@@ -79,8 +90,7 @@ p {
 
 .header-list {
   display: flex;
-  margin: 0;
-  padding-left: 76px;
+  margin: 0 0 0 76px;
   gap: 40px;
 }
 
@@ -90,6 +100,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
+  display: block;
+  padding: 24px 0;
 }
 
 .header-item-link:focus {
@@ -115,6 +127,8 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 .header-address-link:focus {
@@ -159,6 +173,10 @@ p {
 
 /* about  */
 
+.about-title-hidden {
+  visibility: hidden;
+}
+
 .about-title {
   margin: 0;
 }
@@ -174,7 +192,11 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.about-item {
+  width: calc(25% - 18px);
 }
 
 .about-text {
@@ -185,6 +207,9 @@ p {
 }
 
 /* work  */
+.work {
+  padding-top: 0;
+}
 
 .work-title {
   font-size: 36px;
@@ -193,12 +218,16 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--link-text-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .work-list {
   display: flex;
   gap: 24px;
+}
+
+.work-item {
+  width: calc(33.33% - 16px);
 }
 
 /* workers  */
@@ -214,6 +243,8 @@ p {
 
 .workers-item {
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  width: calc(25% - 18px);
 }
 
 .workers-title {
@@ -306,9 +337,14 @@ p {
 .portfolio-hero-button:hover {
   background-color: var(--brand-color);
   color: var(--white-color);
+  border-color: transparent;
 }
 
 /* conteiner */
+
+.portfolio-hero {
+  padding-top: 96px;
+}
 
 .portfolio-conteiner-list {
   display: flex;
@@ -317,14 +353,14 @@ p {
   column-gap: 24px;
 }
 
+.portfolio-conteiner-item {
+  width: calc(33.33% - 16px);
+}
+
 .portfolio-conteiner-content {
   padding: 32px 16px;
   border: 1px solid var(--footer-text);
   border-top: 0;
-}
-
-.portfolio-conteiner-img {
-  display: block;
 }
 
 .portfolio-conteiner-title {
