@@ -42,7 +42,15 @@ p {
   margin: 0 auto;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 /* Header */
+
+.header {
+  border-bottom: 1px solid var(--footer-text);
+}
 
 .header-container {
   display: flex;
@@ -150,9 +158,6 @@ p {
 }
 
 /* about  */
-.about {
-  padding: 120px 0;
-}
 
 .about-title {
   margin: 0;
@@ -180,9 +185,6 @@ p {
 }
 
 /* work  */
-.work {
-  padding-bottom: 120px;
-}
 
 .work-title {
   font-size: 36px;
@@ -203,7 +205,6 @@ p {
 
 .workers {
   background-color: var(--workers-backgraund);
-  padding: 120px 0;
 }
 
 .workers-list {
@@ -278,10 +279,6 @@ p {
 }
 /* Porfolio */
 /* hero */
-
-.portfolio-hero {
-  padding: 96px 0 120px;
-}
 
 .portfolio-hero-list {
   display: flex;
